@@ -17,9 +17,13 @@ $(window).resize(function() {
 
 $(document).ready(function(){
 	//Toggle between projects and about section
-	$(".toggleProjects").click(function(event){
-		$(".about-text").hide();
-		$(".project-text").fadeIn();
+	$(".toggle").click(function(event){
+		var sectionArray = ["about", "projects", "research" , "publications", "contact"];
+		for (var i=0; i<sectionArray.length; i++){
+			$("."+sectionArray[i]+"-text").hide();
+		}
+		var sectionId = this.id;
+		$("."+sectionId+"-text").fadeIn();
 	});
 	$(".toggleAbout").click(function(event){
 		$(".project-text").hide();
