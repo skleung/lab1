@@ -26,6 +26,18 @@ $(document).ready(function(){
 		$(".project-text").hide();
 		$(".about-text").fadeIn();
 	});
+	var curProject;
+	$(".project-box").click(function(event){
+		var projectId = this.id;
+		if (projectId === curProject){
+			curProject = ""; //resets curProject so it can slide down again
+			$('.project-specs#'+projectId).slideUp();
+		}else{
+			curProject = projectId;
+			$('.project-specs').hide();
+			$('.project-specs#'+projectId).slideDown();
+		}
+	});
 	//Scrolling animation
 	$(".scroll").click(function(event){
 		event.preventDefault();

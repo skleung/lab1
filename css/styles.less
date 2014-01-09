@@ -51,6 +51,38 @@ strong{
 		color: @cobalt;
 	}
 }
+.project-box{
+	width: 40%;
+	height: 28%;
+	display: inline-block;
+	margin-right: 10px;
+	border: 4px solid #000;
+}
+.project-box#apamsa{
+	background-image: url('../images/apamsa/mainpage.png');
+	background-size: 100% 100%;
+}
+.project-box#personal{
+	background-image: url('../images/personal/mainpage.png');
+	background-size: 100% 100%;
+}
+.project-specs{
+	display:none;
+	a{
+		color: inherit;
+		text-decoration:none;
+	}
+	a:hover{
+		color: @cobalt;
+	}
+	img{
+		width: 48%;
+		height: 25%;
+		border: 2px solid #444;
+		display: block-inline;
+		margin-right: 4px;
+	}
+}
 .header{
 	width: 40%;
 	margin: auto;
@@ -67,11 +99,24 @@ strong{
 .project-text{
 	display:none;
 }
+.section-icon{
+	position: relative;
+	top: 60px;
+	left: -45px;
+	border: none;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	width: 32px;
+	height: 32px;
+	opacity: .5;
+}
 .wrapper{
 	font-family: "Source Sans Pro";	
-	width: 60%;
+	width: 45%;
 	margin-left: auto;
 	margin-right: auto;	
+	// box-shadow: 3px 3px 5px #888;
 }
 .about{
 	font-family: sans-serif;
@@ -108,7 +153,9 @@ strong{
 .footer{
 	width: 40%;
 	margin: auto;
+	margin-top: 20px;
 	.wrapper{
+		width: 100%;
 		text-align:center;
 		font-family: 'Source Sans Pro', helvetica, sans-serif;
 		a{
