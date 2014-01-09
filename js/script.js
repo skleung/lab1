@@ -10,7 +10,7 @@ $(document).ready(function($) {
 	});
 });
 $(window).resize(function() {
-	$('.welcome-text').css({
+	$('.welcome-wrapper').css({
 		left: ($(window).outerWidth() - $('.welcome-text').outerWidth()) / 2 + 'px',
 		top: ($(window).outerHeight() - $('.welcome-text').outerHeight()) / 2 + 'px'
 	});
